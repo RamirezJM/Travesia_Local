@@ -56,6 +56,8 @@ p{
 
 /*==========================*/
 
+
+
 .paisajes__title{
   margin: 2em auto;
   text-align: center;
@@ -80,14 +82,17 @@ p{
   display: flex;
   flex-direction: column;
   gap: 1em;
+  background-color: rgb(245, 243, 243);
 }
 .card:hover{
   transform: scale(1.05);
 }
 .card__image{
   width: 100%;
-  aspect-ratio: 1.7/1;
+  aspect-ratio: 1.2/1;
   object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .contacto__paisajes{
