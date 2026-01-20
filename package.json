@@ -1,5 +1,25 @@
 {
-  "dependencies": {
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Repositorio  de Travesía Local",
+  "homepage": "https://github.com/RamirezJM/Travesia_Local#readme",
+  "bugs": {
+    "url": "https://github.com/RamirezJM/Travesia_Local/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamirezJM/Travesia_Local.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "sass assets/scss/main.scss assets/css/styles.css --watch --quiet",
+    "build:css": "postcss assets/css/styles.css --output assets/css/styles.css --no-map",
+    "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
+  },
+  "devDependencies": {
     "bootstrap": "^5.3.8",
     "sass": "^1.97.2"
   }
