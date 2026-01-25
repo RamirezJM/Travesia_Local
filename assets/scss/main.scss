@@ -1,5 +1,5 @@
-/* @use 'abstracts/variables' as var;
-@use 'base/typography';
+ @use 'abstracts/variables' as var;
+/*@use 'base/typography';
 @use 'abstracts/mixins' as mix;
 @use 'components/components';
 @use 'layout/layout'; */
@@ -9,7 +9,16 @@
    $primary: var.$primary,
    $secondary: var.$secondary,
    $warning: var.$warning,
-   $danger: var.$danger,
+
    $light: var.$light,
    $dark: var.$dark
 );
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    > .container {  
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
