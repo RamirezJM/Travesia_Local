@@ -17,8 +17,27 @@
 @media (min-width: 992px) {
   .navbar-expand-lg {
     > .container {  
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
+     /*  display: grid;
+      grid-template-columns: repeat(6, 1fr); */
+      flex-direction: column;
     }
   }
+/*   .navbar-brand{
+    grid-column: 4/5;
+  }
+  .nav-item:nth-of-type(1){
+    grid-column: 1/2;
+  } */
+}
+
+.experiencias-card{
+  background: var.$secondary url('../images/experiencias.png') no-repeat center/cover;
+  background-blend-mode: multiply;
+  border-radius: 5px;
+}
+
+.bitacora-card{
+  background: var.$primary url('../images/cucharas.webp') no-repeat center/cover;
+  background-blend-mode: multiply;
+  border-radius: 5px;
 }
