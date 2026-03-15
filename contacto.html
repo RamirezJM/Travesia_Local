@@ -33,30 +33,29 @@
   <section class="contacto my-5 p-4" id="contacto">
     <div class="container">
       <h2 class="text-center mb-4 contacto__title">Contacto</h2>
-      <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o te gustaría trabajar
-        con nosotros,
+      <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o quieres reslizar una reserva,
         envíanos tu mensaje.</p>
       <div class="contacto__form w-100 mx-auto">
         <form class="my-5 p-2 rounded-2 needs-validation" action="https://formspree.io/f/xeeravro" method="POST"
           novalidate>
 
-          <input type="text" placeholder="Nombre" class="form-control border-primary w-100 my-3" required
-            aria-describedby="nombre" aria-label="nombre" name="nombre" minlength="6">
+          <input type="text" name="nombre" placeholder="Nombre" class="form-control border-primary w-100 my-3" required
+            aria-describedby="nombre" aria-label="nombre" minlength="6">
           <div class="invalid-feedback text-center" id="nombre">El nombre debe tener más de 6 caracteres</div>
 
-          <input type="email" placeholder="Email" class=" form-control border-primary w-100 my-3" required
-            aria-describedby="email" aria-label="email" name="email">
+          <input type="email" name="email" placeholder="Email" class=" form-control border-primary w-100 my-3" required
+            aria-describedby="email" aria-label="email" >
           <div class="invalid-feedback text-center" id="email">El formato de email no es válido</div>
 
           <input type="tel" name="telefono" placeholder="Teléfono (Opcional)"
             class="form-control border-primary w-100 my-3" pattern="[0-9]{7,15}" aria-describedby="tel-feedback"
-            aria-label="telefono" name="teléfono">
+            aria-label="telefono">
           <div class="invalid-feedback text-center" id="tel-feedback">
             El número debe tener entre 7 y 15 digitos.
           </div>
 
-          <textarea placeholder="Mensaje" class="form-control border-primary w-100 my-3" required
-            aria-describedby="mensaje" aria-label="mensaje" name="mensaje" minlength="10"></textarea>
+          <textarea placeholder="Mensaje" name="mensaje" class="form-control border-primary w-100 my-3" required
+            aria-describedby="mensaje" aria-label="mensaje" minlength="10"></textarea>
           <div class="invalid-feedback text-center" id="mensaje">El mensaje debe tener más de 10 caracteres</div>
           <button class="btn btn-primary form__btn form__btn--lg text-uppercase fw-semibold d-block mx-auto mt-3"
             type="submit">Enviar</button>
