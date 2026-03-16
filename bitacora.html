@@ -10,24 +10,42 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg sticky-top p-4">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="assets/images/logo.png" alt="logo" width="225">
+
+   <a class="navbar-brand d-lg-none" href="#">
+        <img src="assets/images/logo.png" alt="Logo" width="80">
       </a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav align-items-center ms-auto ">
-        <li class="nav-item"><a href="index.html" class="nav-link fw-semibold fs-5">Inicio</a></li>
-          <li class="nav-item"><a href="experiencias.html" class="nav-link fw-semibold fs-5">Experiencias</a></li>
-          <li class="nav-item"><a href="nosotros.html" class="nav-link fw-semibold fs-5">Quienes somos</a></li>
-          <li class="nav-item"><a href="bitacora.html" class="nav-link fw-semibold fs-5">Bitácora</a></li>
-          <li class="nav-item"><a href="index.html" class="nav-link fw-semibold fs-5">Reservas</a></li>
-          <li class="nav-item"><a href="contacto.html" class="nav-link fw-semibold fs-5">Contacto</a></li>
-        </ul>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="navbar-grid-container w-100">
+
+          <ul class="navbar-nav group-left">
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="experiencias.html">Experiencias</a></li>
+          </ul>
+
+          <a class="navbar-brand d-none d-lg-block mx-0" href="index.html">
+            <img src="assets/images/logo.png" alt="Logo" width="50">
+          </a>
+
+
+          <ul class="navbar-nav group-right">
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="coleccion.html">Colección</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5 active" href="bitacora.html">Bitácora</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="contacto.html">Reservas</a></li>
+          </ul>
+
+
+        </div>
       </div>
+
+   
+
     </div>
   </nav>
 

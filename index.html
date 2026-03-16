@@ -10,10 +10,10 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg  p-4">
+  <!--  <nav class="navbar navbar-expand-lg  p-4">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="assets/images/logo.png" alt="logo" width="225">
+        <img src="assets/images/logo.png" alt="logo" width="80">
       </a>
       <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,48 @@
         </ul>
       </div>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+   <a class="navbar-brand d-lg-none" href="#">
+        <img src="assets/images/logo.png" alt="Logo" width="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="navbar-grid-container w-100">
+
+          <ul class="navbar-nav group-left">
+            <li class="nav-item"><a class="nav-link fw-bold fs-5 active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="experiencias.html">Experiencias</a></li>
+          </ul>
+
+          <a class="navbar-brand d-none d-lg-block mx-0" href="index.html">
+            <img src="assets/images/logo.png" alt="Logo" width="50">
+          </a>
+
+
+          <ul class="navbar-nav group-right">
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="coleccion.html">Colección</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="bitacora.html">Bitácora</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="contacto.html">Reservas</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+
+   
+
+    </div>
   </nav>
+
+
   <main>
     <section class="hero">
       <div class="container-fluid">
@@ -39,21 +80,53 @@
 
     <section class="secciones my-5">
       <div class="container">
-        <ul class="list-unstyled">
+        <div class="row g-4">
+
+          <div class="card mx-3" style="width: 18rem;">
+            <img src="assets/images/bosque.jpg" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Experiencias</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+          </div>
+
+          <div class="card mx-3" style="width: 18rem;">
+            <img src="assets/images/cucharas.webp" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bitácora</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 18rem;">
+            <img src="assets/images/pasarelas.jpeg" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Contacto</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+          </div>
+        </div>
+        <!-- <ul class="list-unstyled">
           <li class="my-4"><a href="experiencias.html" class="experiencias-card d-block py-5 text-decoration-none">
-            <h2 class="m-5 display-3 text-white fw-bolder">Experiencias</h2></a></li>
+            <h2 class="m-5 display-3 text-white fw-medium">Experiencias</h2></a></li>
           <li class="my-4"><a href="bitacora.html" class="bitacora-card d-block py-5 text-decoration-none">
-             <h2 class="m-5 display-3 text-white fw-bolder">Bitácora</h2>
+             <h2 class="m-5 display-3 text-white fw-medium">Bitácora</h2>
           </a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
           <li><a href=""></a></li>
-        </ul>
+        </ul> -->
+
       </div>
     </section>
 
   </main>
-<!--  <div id="maintenance-overlay" style="
+  <!--  <div id="maintenance-overlay" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -69,19 +142,19 @@
     z-index: 9999; /* Asegura que esté por encima de todo */
     text-align: center;
     padding: 20px; 
-">  -->
- <!-- <img src="assets/images/images.png" alt="Hombre trabajando" style="
+">   -->
+  <!--  <img src="assets/images/images.png" alt="Hombre trabajando" style="
         max-width: 150px;
         height: auto;
         margin-bottom: 20px;
-        border-radius: 8px; /* Un poco de estilo para la imagen -->
-<!--     
-    <h1 style="font-size: 2.5em; margin-bottom: 10px;">🚧 ¡Pronto Disponible! 🚤🌲</h1>
+        border-radius: 8px; " -->
+
+  <!--     <h1 style="font-size: 2.5em; margin-bottom: 10px;">🚧 ¡Pronto Disponible! 🚤🌲</h1>
     <p style="font-size: 1.2em; max-width: 600px;">
       Estamos trabajando arduamente para finalizar este espacio.
       hola@travesialocal.cl
     </p>
-  </div> -->
+  </div>  -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
