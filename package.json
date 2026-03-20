@@ -20,7 +20,12 @@
     "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "autoprefixer": "^10.4.27",
     "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
     "sass": "^1.97.2"
   }
 }
