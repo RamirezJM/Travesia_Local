@@ -27,13 +27,15 @@ form.addEventListener('submit', async (ev) => { // Agregamos async
   } else {
     // Si es válido, enviamos los datos a Formspree
     const data = new FormData(form);
-    
+    console.log(data)
+
     const response = await fetch(form.action, {
       method: form.method,
       body: data,
       headers: {
         'Accept': 'application/json'
       }
+
     });
 
     if (response.ok) {
@@ -42,6 +44,8 @@ form.addEventListener('submit', async (ev) => { // Agregamos async
       form.reset();
     } else {
       alert('Ups, hubo un problema al enviar. Inténtalo de nuevo.');
+      const responseData = await response.json();
+      console.log(responseData);
     }
   }
 });
