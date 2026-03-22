@@ -15,9 +15,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "watch:css": "sass assets/scss/main.scss assets/css/styles.css --watch --quiet",
-    "build:css": "postcss assets/css/styles.css --output assets/css/styles.css --no-map",
-    "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
+    "sass:dev": "sass assets/scss/main.scss assets/css/styles.css --watch --source-map",
+    "build:sass": "sass assets/scss/main.scss assets/css/styles.css --no-source-map",
+    "build:css": "postcss assets/css/styles.css -o assets/css/styles.css --config postcss.config.js",
+    "deploy": "npm run build:sass && npm run build:css && gh-pages -d ."
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
