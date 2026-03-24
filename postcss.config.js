@@ -1,26 +1,44 @@
 
 import autoprefixer from 'autoprefixer';
 import purgecssLib from '@fullhuman/postcss-purgecss';
-const purgecss = purgecssLib.default;
+/* const purgecss = purgecssLib.default; */
 
 
-export default {
+/* export default {
   plugins: [
     autoprefixer,
-    purgecss({
+    purgecss({ */
 
-      /* mantengo solo las clases usadas en el proyecto, eliminando todas las no usadas (~ 10.500 líneas de código) */
-      content: [
+     
+      /* content: [
         './*.html',
-        './assets/js/**/*.js',
-      ],
+        './assets/js/**//* *.js', */
+      /* ],
       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-       safelist: {
-        standard: [/^modal/, /^navbar/, /^btn/, 'active', 'show', 'fade', 'collapsing'],
+       safelist: { */
+        /* standard: [/^modal/, /^navbar/, /^btn/, 'active', 'show', 'fade', 'collapsing'],
         deep: [],
         greedy: []
       },
     }),
   ],
 
+};
+ */ 
+
+export default {
+  plugins: [
+    autoprefixer(),
+    purgecss({ // Llama a la función directamente
+      content: [
+        './*.html',
+        './assets/js/**/*.js',
+      ],
+      // ... resto de tu configuración igual
+      safelist: [
+        'active', 'show', 'fade', 'collapsing',
+        /^modal/, /^navbar/, /^btn/, /^carousel-/ // ¡Agrega carousel!
+      ],
+    }),
+  ],
 };
