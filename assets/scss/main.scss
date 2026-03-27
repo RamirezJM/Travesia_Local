@@ -1,0 +1,107 @@
+ @use 'abstracts/variables' as var;
+ @use 'base/typography';
+ /* @use 'abstracts/mixins' as mix;
+@use 'components/components';
+@use 'layout/layout';  */
+
+
+
+
+ @use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+ /*   $primary: var.$primary,
+   $secondary: var.$secondary,
+   $warning: var.$warning,
+
+   $light: var.$light,
+   $dark: var.$dark,  */
+  $primary: var.$purpura-primary,
+  $light:   var.$crema-light,
+  $body-color: var.$text-main,         
+  $headings-color: var.$petroleo-oscuro, 
+  $link-color: var.$purpura-primary,
+  $link-hover-color: var.$purpura-dark,
+  $link-decoration: none,
+   
+  $font-family-sans-serif: ("Futura LT Book", system-ui, -apple-system, sans-serif),
+  $headings-font-family: ("Futura LT Condensed", sans-serif),
+  $headings-font-weight: 600, //
+  $font-weight-normal: 400,
+  $font-weight-medium: 500,
+  );
+
+/*  @media (min-width: 992px) {
+   .navbar-expand-lg {
+     >.container {
+      
+       flex-direction: column;
+     }
+   }
+
+  
+ } */
+
+.navbar-grid-container {
+  @media (min-width: 992px) { // Desktop
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; // Izquierda, Logo (ajustado), Derecha
+    align-items: center;
+    gap: 1.5em;
+
+    .group-left {
+      justify-content: flex-end; // Alinea los 3 primeros hacia el logo
+    }
+
+    .group-right {
+      justify-content: flex-start; // Alinea los 3 últimos hacia el logo
+    }
+
+    .navbar-brand {
+      justify-self: center; // Asegura que el logo esté muerto al centro
+    }
+  }
+}
+
+// Ajustes para móvil
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    /* padding: 1rem 0; */
+  }
+}
+.navbar {
+  .nav-link {
+    color: var.$text-main; // Color base del texto
+    font-family: 'Futura LT Condensed', sans-serif;
+    
+    &:hover, &:focus {
+      color: var.$purpura-primary; // Tu color #63264A
+    }
+    
+    &.active {
+      color: var.$purpura-primary;
+      font-weight: 700;
+    }
+  }
+}
+
+/* 
+ .experiencias-card {
+   background: var.$secondary url('../images/experiencias.png') no-repeat center/cover;
+   background-blend-mode: multiply;
+   border-radius: 5px;
+ }
+
+ .bitacora-card {
+   background: var.$primary url('../images/cucharas.webp') no-repeat center/cover;
+   background-blend-mode: multiply;
+   border-radius: 5px;
+ } */
+
+  .experiencias-lista li::marker, .viaje-lista li::marker{
+    color: var.$purpura-primary;
+    font-size: 1.5rem;
+  }
+
+  .copyright{
+    font-size: 0.8rem;
+  }

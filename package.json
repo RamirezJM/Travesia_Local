@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Repositorio  de Travesía Local",
+  "homepage": "https://github.com/RamirezJM/Travesia_Local#readme",
+  "bugs": {
+    "url": "https://github.com/RamirezJM/Travesia_Local/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamirezJM/Travesia_Local.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass assets/scss/main.scss assets/css/styles.css --watch --source-map",
+    "build:sass": "sass assets/scss/main.scss assets/css/styles.css --no-source-map",
+    "build:css": "postcss assets/css/styles.css -o assets/css/styles.css --config postcss.config.js",
+    "deploy": "npm run build:sass && npm run build:css && gh-pages -d ."
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "autoprefixer": "^10.4.27",
+    "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.97.2"
+  }
+}
