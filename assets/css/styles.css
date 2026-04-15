@@ -277,6 +277,10 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
 img,
 svg {
   vertical-align: middle;
@@ -365,9 +369,34 @@ textarea {
   font-weight: 300;
 }
 
+.display-1 {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: calc(1.625rem + 4.5vw);
+}
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.figure {
+  display: inline-block;
+}
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.figure-caption {
+  font-size: 0.6rem;
+  color: var(--bs-secondary-color);
 }
 
 .container,
@@ -2240,6 +2269,10 @@ textarea.form-control {
   gap: 0.5rem !important;
 }
 
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
 .fs-4 {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
@@ -2250,6 +2283,10 @@ textarea.form-control {
 
 .fw-normal {
   font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
 }
 
 .fw-semibold {
@@ -2311,6 +2348,9 @@ textarea.form-control {
   }
 }
 @media (min-width: 1200px) {
+  .fs-3 {
+    font-size: 1.75rem !important;
+  }
   .fs-4 {
     font-size: 1.5rem !important;
   }
@@ -2361,18 +2401,6 @@ textarea.form-control {
   font-weight: 700;
 }
 
-/* 
- .experiencias-card {
-   background: var.$secondary url('../images/experiencias.png') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- }
-
- .bitacora-card {
-   background: var.$primary url('../images/cucharas.webp') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- } */
 .experiencias-lista li::marker {
   color: #63264A;
   font-size: 1.5rem;
@@ -2380,4 +2408,8 @@ textarea.form-control {
 
 .copyright {
   font-size: 0.8rem;
+}
+
+.hero-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

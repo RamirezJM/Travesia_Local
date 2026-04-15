@@ -27,6 +27,8 @@
   $headings-font-weight: 600, //
   $font-weight-normal: 400,
   $font-weight-medium: 500,
+
+  $figure-caption-font-size: 0.6rem,
   );
 
 /*  @media (min-width: 992px) {
@@ -84,19 +86,6 @@
   }
 }
 
-/* 
- .experiencias-card {
-   background: var.$secondary url('../images/experiencias.png') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- }
-
- .bitacora-card {
-   background: var.$primary url('../images/cucharas.webp') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- } */
-
   .experiencias-lista li::marker, .viaje-lista li::marker{
     color: var.$purpura-primary;
     font-size: 1.5rem;
@@ -105,3 +94,8 @@
   .copyright{
     font-size: 0.8rem;
   }
+
+  
+   .hero-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
