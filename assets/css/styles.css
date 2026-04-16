@@ -763,7 +763,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.875em;
+  font-size: 0.6rem;
   color: var(--bs-secondary-color);
 }
 
@@ -11935,25 +11935,22 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 
-/* 
- .experiencias-card {
-   background: var.$secondary url('../images/experiencias.png') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- }
-
- .bitacora-card {
-   background: var.$primary url('../images/cucharas.webp') no-repeat center/cover;
-   background-blend-mode: multiply;
-   border-radius: 5px;
- } */
-.experiencias-lista li::marker, .viaje-lista li::marker {
+.experiencias-lista li::marker, .viaje-lista li::marker, .nosotros-lista li::marker {
   color: #63264A;
   font-size: 1.5rem;
 }
 
 .copyright {
   font-size: 0.8rem;
+}
+
+.hero-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.carousel-productos {
+  aspect-ratio: 1.1/1;
+  /*   */
 }
 
 /*# sourceMappingURL=styles.css.map */
