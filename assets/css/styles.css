@@ -469,6 +469,13 @@ textarea {
 .g-4 {
   --bs-gutter-y: 1.5rem;
 }
+
+@media (min-width: 576px) {
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
 @media (min-width: 768px) {
   .col-md-4 {
     flex: 0 0 auto;
@@ -483,6 +490,16 @@ textarea {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+  }
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 
@@ -2151,6 +2168,11 @@ textarea.form-control {
   content: "";
 }
 
+.object-fit-cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
 .d-block {
   display: block !important;
 }
@@ -2178,10 +2200,6 @@ textarea.form-control {
 .border-primary {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
-}
-
-.w-50 {
-  width: 50% !important;
 }
 
 .w-75 {
@@ -2259,6 +2277,11 @@ textarea.form-control {
 
 .p-4 {
   padding: 1.5rem !important;
+}
+
+.px-3 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .pb-3 {
@@ -2339,6 +2362,17 @@ textarea.form-control {
   border-top-left-radius: var(--bs-border-radius) !important;
   border-top-right-radius: var(--bs-border-radius) !important;
 }
+
+@media (min-width: 576px) {
+  .mx-sm-4 {
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+  }
+  .px-sm-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+}
 @media (min-width: 992px) {
   .d-lg-block {
     display: block !important;
@@ -2401,7 +2435,7 @@ textarea.form-control {
   font-weight: 700;
 }
 
-.experiencias-lista li::marker {
+.experiencias-lista li::marker, .nosotros-lista li::marker {
   color: #63264A;
   font-size: 1.5rem;
 }
@@ -2412,4 +2446,9 @@ textarea.form-control {
 
 .hero-title {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.carousel-productos {
+  aspect-ratio: 1.1/1;
+  /*   */
 }
