@@ -86,7 +86,7 @@
   }
 }
 
-  .experiencias-lista li::marker, .viaje-lista li::marker{
+  .experiencias-lista li::marker, .viaje-lista li::marker, .nosotros-lista li::marker{
     color: var.$purpura-primary;
     font-size: 1.5rem;
   }
@@ -98,4 +98,10 @@
   
    .hero-title{
     font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .carousel-productos{
+    aspect-ratio: 1.1/1;
+  /*   */
+    
    }
