@@ -2284,6 +2284,11 @@ textarea.form-control {
   padding-left: 1rem !important;
 }
 
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
 .pb-3 {
   padding-bottom: 1rem !important;
 }
@@ -2390,15 +2395,15 @@ textarea.form-control {
   }
 }
 /*  @media (min-width: 992px) {
-   .navbar-expand-lg {
-     >.container {
+  .navbar-expand-lg {
+    >.container {
 
-       flex-direction: column;
-     }
-   }
+      flex-direction: column;
+    }
+  }
 
 
- } */
+} */
 @media (min-width: 992px) {
   .navbar-grid-container {
     display: grid;
@@ -2435,9 +2440,13 @@ textarea.form-control {
   font-weight: 700;
 }
 
-.experiencias-lista li::marker, .nosotros-lista li::marker {
+.experiencias-lista li::marker,
+.nosotros-lista li::marker,
+.modal-lista li::marker,
+.terminos-lista li::marker {
   color: #63264A;
   font-size: 1.5rem;
+  margin-top: 0.5em;
 }
 
 .copyright {
@@ -2450,5 +2459,4 @@ textarea.form-control {
 
 .carousel-productos {
   aspect-ratio: 1.1/1;
-  /*   */
 }
