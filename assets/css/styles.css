@@ -11890,15 +11890,15 @@ textarea.form-control-lg {
   }
 }
 /*  @media (min-width: 992px) {
-   .navbar-expand-lg {
-     >.container {
+  .navbar-expand-lg {
+    >.container {
 
-       flex-direction: column;
-     }
-   }
+      flex-direction: column;
+    }
+  }
 
 
- } */
+} */
 @media (min-width: 992px) {
   .navbar-grid-container {
     display: grid;
@@ -11935,9 +11935,14 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 
-.experiencias-lista li::marker, .viaje-lista li::marker, .nosotros-lista li::marker {
+.experiencias-lista li::marker,
+.viaje-lista li::marker,
+.nosotros-lista li::marker,
+.modal-lista li::marker,
+.terminos-lista li::marker {
   color: #63264A;
   font-size: 1.5rem;
+  margin-top: 0.5em;
 }
 
 .copyright {
@@ -11950,7 +11955,6 @@ textarea.form-control-lg {
 
 .carousel-productos {
   aspect-ratio: 1.1/1;
-  /*   */
 }
 
 /*# sourceMappingURL=styles.css.map */
