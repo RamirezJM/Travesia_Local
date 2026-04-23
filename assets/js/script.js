@@ -1,22 +1,11 @@
-/* script que valida el formulario */
-/* 
-const form = document.querySelector('.needs-validation');
 
-form.addEventListener('submit', ev => {
-  ev.preventDefault();
-
-  if (!form.checkValidity()) {
-    ev.stopPropagation();
-    form.classList.add('was-validated');
-    return
-  } else {
-    alert('Formulario enviado. Pronto nos comunicaremos contigo.');
-    form.classList.remove('was-validated');
-    form.reset();
-  }
-}); */
 
 const form = document.querySelector('.needs-validation');
+const modalRespuesta = new bootstrap.Modal(document.querySelector('#modal-respuesta'));
+const respuestaTitulo = document.querySelector('#modal-respuesta-titulo')
+const respuestaImagen = document.querySelector('#modal-respuesta-imagen')
+const respuestaMensaje = document.querySelector('#modal-respuesta-mensaje')
+
 
 form.addEventListener('submit', async (ev) => { // Agregamos async
   ev.preventDefault();
@@ -39,13 +28,19 @@ form.addEventListener('submit', async (ev) => { // Agregamos async
     });
 
     if (response.ok) {
-      alert('¡Gracias! Pronto nos comunicaremos contigo.');
+      respuestaTitulo.innerText = '¡Mensaje Enviado!'
+      respuestaImagen.src = 'assets/images/iconos/respuesta-ok.svg'
+      respuestaMensaje.innerText = 'Gracias por contactarnos. Nos comunicaremos contigo a la brevedad.'
       form.classList.remove('was-validated');
       form.reset();
     } else {
-      alert('Ups, hubo un problema al enviar. Inténtalo de nuevo.');
+      respuestaTitulo.innerText = 'Ha ocurrido un error'
+      respuestaImagen.src = 'assets/images/iconos/respuesta-ok.svg'
+      respuestaMensaje.innerText = 'No pudimos procesar tu solicitud. Por favor intenta nuevamente o contáctanos a través de nuestras redes sociales.'
       const responseData = await response.json();
       console.log(responseData);
     }
+
   }
+  modalRespuesta.show()
 });
