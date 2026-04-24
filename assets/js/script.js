@@ -35,10 +35,11 @@ form.addEventListener('submit', async (ev) => { // Agregamos async
       form.reset();
     } else {
       respuestaTitulo.innerText = 'Ha ocurrido un error'
-      respuestaImagen.src = 'assets/images/iconos/respuesta-ok.svg'
+      respuestaImagen.src = 'assets/images/iconos/respuesta-error.svg'
       respuestaMensaje.innerText = 'No pudimos procesar tu solicitud. Por favor intenta nuevamente o contáctanos a través de nuestras redes sociales.'
       const responseData = await response.json();
       console.log(responseData);
+      form.reset();
     }
 
   }
