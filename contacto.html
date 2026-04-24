@@ -8,23 +8,26 @@
   <meta property="og:title" content="Contacto | Travesía Local">
   <meta property="og:image" content="https://travesialocal.cl/assets/images/travesia-og.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Planifica tu viaje a Caleta Tortel con Travesía Local. Escríbenos para reservar tu experiencia de navegación, cultura y naturaleza en la Patagonia.">
+  <meta property="og:description"
+    content="Planifica tu viaje a Caleta Tortel con Travesía Local. Escríbenos para reservar tu experiencia de navegación, cultura y naturaleza en la Patagonia.">
   <meta property="og:url" content="https://travesialocal.cl/contacto">
   <link rel="canonical" href="https://travesialocal.cl/contacto">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="description" content="Planifica tu viaje a Caleta Tortel con Travesía Local. Escríbenos para reservar tu experiencia de navegación, cultura y naturaleza en la Patagonia.">
+  <meta name="description"
+    content="Planifica tu viaje a Caleta Tortel con Travesía Local. Escríbenos para reservar tu experiencia de navegación, cultura y naturaleza en la Patagonia.">
   <title>Contacto | Travesía Local</title>
 </head>
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
 
-   <a class="navbar-brand d-lg-none" href="/">
-        <img src="assets/images/logo.png" alt="Logo" width="80">
+      <a class="navbar-brand d-md-none" href="/">
+        <img src="assets/images/logo.png" alt="logo Travesía Local" class="logo" >
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -32,65 +35,98 @@
         <div class="navbar-grid-container w-100">
 
           <ul class="navbar-nav group-left">
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="/">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="experiencias.html">Experiencias</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4" href="/">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4" href="experiencias.html">Experiencias</a></li>
           </ul>
 
-          <a class="navbar-brand d-none d-lg-block mx-0" href="/">
-            <img src="assets/images/logo.png" alt="Logo" width="50">
+          <a class="navbar-brand d-none d-md-block mx-0" href="/">
+            <img src="assets/images/logo.png" alt="logo Travesía Local" class="logo">
           </a>
 
 
           <ul class="navbar-nav group-right">
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="coleccion.html">Colección</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="bitacora.html">Bitácora</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5 active" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4" href="coleccion.html">Colección</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4" href="bitacora.html">Bitácora</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-4 active" href="contacto.html">Contacto</a></li>
           </ul>
 
 
         </div>
       </div>
 
-   
+
 
     </div>
   </nav>
   <section class="contacto my-5 p-4" id="contacto">
     <div class="container">
       <h2 class="text-center mb-4 contacto__title">Contacto</h2>
-      <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o quieres reslizar una reserva,
+      <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o quieres realizar una
+        reserva,
         envíanos tu mensaje.</p>
-      <div class="contacto__form w-100 mx-auto">
-        <form class="my-5 p-2 rounded-2 needs-validation" action="https://formspree.io/f/xeeravro" method="POST"
-          novalidate>
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <form class="my-5 p-2 rounded-2 needs-validation" action="https://formspree.io/f/xeeravro" method="POST"
+            novalidate>
 
-          <input type="text" name="nombre" placeholder="Nombre" class="form-control border-primary w-100 my-3" required
-            aria-describedby="nombre" aria-label="nombre" minlength="6">
-          <div class="invalid-feedback text-center" id="nombre">El nombre debe tener más de 6 caracteres</div>
+            <input type="text" name="nombre" placeholder="Nombre" class="form-control border-primary w-100 my-3"
+              required aria-describedby="nombre" aria-label="nombre" minlength="6">
+            <div class="invalid-feedback text-center" id="nombre">El nombre debe tener más de 6 caracteres</div>
 
-          <input type="email" name="email" placeholder="Email" class=" form-control border-primary w-100 my-3" required
-            aria-describedby="email" aria-label="email" >
-          <div class="invalid-feedback text-center" id="email">El formato de email no es válido</div>
+            <input type="email" name="email" placeholder="Email" class=" form-control border-primary w-100 my-3"
+              required aria-describedby="email" aria-label="email">
+            <div class="invalid-feedback text-center" id="email">El formato de email no es válido</div>
 
-          <input type="tel" name="telefono" placeholder="Teléfono (Opcional)"
-            class="form-control border-primary w-100 my-3" pattern="[0-9]{7,15}" aria-describedby="tel-feedback"
-            aria-label="telefono">
-          <div class="invalid-feedback text-center" id="tel-feedback">
-            El número debe tener entre 7 y 15 digitos.
-          </div>
+            <select name="motivo_contacto" class="form-select border-primary w-100 my-3" required
+              aria-describedby="motivo" aria-label="Motivo de contacto">
+              <option selected disabled value="">¿En qué podemos ayudarte?</option>
+              <option value="informacion">Más información</option>
+              <option value="reserva">Reservar un tour</option>
+              <option value="uso-imagen">Consultar sobre el uso de una imagen</option>
+            </select>
+            <div class="invalid-feedback text-center" id="motivo">
+              Por favor, selecciona una opción para continuar
+            </div>
 
-          <textarea placeholder="Mensaje" name="mensaje" class="form-control border-primary w-100 my-3" required
-            aria-describedby="mensaje" aria-label="mensaje" minlength="10"></textarea>
-          <div class="invalid-feedback text-center" id="mensaje">El mensaje debe tener más de 10 caracteres</div>
-          <button class="btn btn-primary form__btn form__btn--lg text-uppercase fw-semibold d-block mx-auto mt-3"
-            type="submit">Enviar</button>
-        </form>
+            <input type="tel" name="telefono" placeholder="Teléfono (Opcional)"
+              class="form-control border-primary w-100 my-3" pattern="[0-9]{7,15}" aria-describedby="tel-feedback"
+              aria-label="telefono">
+            <div class="invalid-feedback text-center" id="tel-feedback">
+              El número debe tener entre 7 y 15 digitos.
+            </div>
+
+            <textarea placeholder="Mensaje" name="mensaje" class="form-control border-primary w-100 my-3" required
+              aria-describedby="mensaje" aria-label="mensaje" minlength="10"></textarea>
+            <div class="invalid-feedback text-center" id="mensaje">El mensaje debe tener más de 10 caracteres</div>
+            <button class="btn btn-primary form__btn form__btn--lg text-uppercase fw-semibold d-block mx-auto mt-3"
+              type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-    <footer class="p-2 bg-light">
+  <div class="modal fade" id="modal-respuesta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modal-respuesta-titulo">
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="icono respuesta" id="modal-respuesta-imagen" class="modal-respuesta-imagen">
+          <p id="modal-respuesta-mensaje"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-2 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
@@ -104,9 +140,9 @@
         <div class="col-md-4 text-center">
           <h5>Contáctanos</h5>
           <div class="d-flex gap-2 justify-content-center">
-            <a href="#"><img src="assets/images/whatsapp.svg" alt="icono whatsapp" width="35px"></a>
-            <a href="#"><img src="assets/images/mail.svg" alt="icono mail" width="35px"></a>
-            <a href="#"><img src="assets/images/instagram.svg" alt="icono instagram" width="35px"></a>
+            <a href="#"><img src="assets/images/iconos/whatsapp.svg" alt="icono whatsapp" width="35px"></a>
+            <a href="#"><img src="assets/images/iconos/mail.svg" alt="icono mail" width="35px"></a>
+            <a href="#"><img src="assets/images/iconos/instagram.svg" alt="icono instagram" width="35px"></a>
           </div>
         </div>
       </div>

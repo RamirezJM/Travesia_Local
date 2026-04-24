@@ -32,6 +32,7 @@ export default {
     purgecss({ // Llama a la función directamente
       content: [
         './*.html',
+        './blog/*.html',
         './assets/js/**/*.js',
       ],
       // ... resto de tu configuración igual
