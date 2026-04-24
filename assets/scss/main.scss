@@ -43,7 +43,7 @@
  } */
 
  .navbar-grid-container {
-   @media (min-width: 992px) {
+   @media (min-width: 768px) {
      // Desktop
      display: grid;
      grid-template-columns: 1fr auto 1fr; // Izquierda, Logo (ajustado), Derecha
@@ -65,7 +65,7 @@
  }
 
  // Ajustes para móvil
- @media (max-width: 991px) {
+ @media (max-width: 767px) {
    .navbar-nav {
      text-align: center;
      /* padding: 1rem 0; */
@@ -83,10 +83,19 @@
      }
 
      &.active {
-       color: var.$purpura-primary;
+       color: var.$purpura-dark;
        font-weight: 700;
      }
    }
+ }
+
+ .logo{
+  width: 50px;
+ }
+ @media (min-width:768px){
+  .logo{
+  width: 80px;
+  }
  }
 
  .experiencias-lista li::marker,
@@ -109,4 +118,8 @@
  .carousel-productos {
    aspect-ratio: 1.1/1;
 
+ }
+
+ .modal-respuesta-imagen{
+  width: 3rem;
  }
