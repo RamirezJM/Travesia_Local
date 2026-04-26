@@ -26,7 +26,7 @@
       <a class="navbar-brand d-md-none" href="/">
         <img src="assets/images/logo.png" alt="logo Travesía Local" class="logo" >
       </a>
-      <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,12 +62,11 @@
   <section class="contacto my-5 p-4" id="contacto">
     <div class="container">
       <h2 class="text-center mb-4 contacto__title">Contacto</h2>
-      <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o quieres realizar una
-        reserva,
-        envíanos tu mensaje.</p>
+      <p class="text-center lead fw-normal contacto__subtitle">Si tienes alguna pregunta, estás interesado en alguna imagen o quieres realizar una
+        reserva, envíanos tu mensaje.</p>
       <div class="row justify-content-center">
         <div class="col-sm-10 col-md-8 col-lg-6">
-          <form class="my-5 p-2 rounded-2 needs-validation" action="https://formspree.io/f/xeeravro" method="POST"
+          <form class="my-2 p-2 rounded-2 needs-validation" action="https://formspree.io/f/xeeravro" method="POST"
             novalidate>
 
             <input type="text" name="nombre" placeholder="Nombre" class="form-control border-primary w-100 my-3"
@@ -81,9 +80,9 @@
             <select name="motivo_contacto" class="form-select border-primary w-100 my-3" required
               aria-describedby="motivo" aria-label="Motivo de contacto">
               <option selected disabled value="">¿En qué podemos ayudarte?</option>
-              <option value="informacion">Más información</option>
-              <option value="reserva">Reservar un tour</option>
-              <option value="uso-imagen">Consultar sobre el uso de una imagen</option>
+              <option value="informacion">Necesito más información</option>
+              <option value="reserva">Quiero reservar un tour</option>
+              <option value="uso-imagen">Me interesa una imagen del sitio</option>
             </select>
             <div class="invalid-feedback text-center" id="motivo">
               Por favor, selecciona una opción para continuar
@@ -97,7 +96,7 @@
             </div>
 
             <textarea placeholder="Mensaje" name="mensaje" class="form-control border-primary w-100 my-3" required
-              aria-describedby="mensaje" aria-label="mensaje" minlength="10"></textarea>
+              aria-describedby="mensaje" aria-label="mensaje" minlength="10" rows="4"></textarea>
             <div class="invalid-feedback text-center" id="mensaje">El mensaje debe tener más de 10 caracteres</div>
             <button class="btn btn-primary form__btn form__btn--lg text-uppercase fw-semibold d-block mx-auto mt-3"
               type="submit">Enviar</button>
@@ -130,7 +129,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center">
-          <img src="assets/images/logo.png" alt="logo travesía local" class="img-fluid" width="50">
+          <img src="assets/images/logo.png" alt="logo travesía local" class="img-fluid" width="60">
         </div>
         <div class="col-md-4 text-center">
           <h5>Travesía Local</h5>
@@ -139,17 +138,84 @@
         </div>
         <div class="col-md-4 text-center">
           <h5>Contáctanos</h5>
-          <div class="d-flex gap-2 justify-content-center">
-            <a href="#"><img src="assets/images/iconos/whatsapp.svg" alt="icono whatsapp" width="35px"></a>
-            <a href="#"><img src="assets/images/iconos/mail.svg" alt="icono mail" width="35px"></a>
-            <a href="#"><img src="assets/images/iconos/instagram.svg" alt="icono instagram" width="35px"></a>
+         <div class="d-flex gap-2 justify-content-center">
+            <a href="https://wa.me/56982498803" target="_blank" rel="noopener noreferrer"><img
+                src="assets/images/iconos/whatsapp.svg" alt="icono whatsapp" class="icono-redes"></a>
+            <a href="mailto:hola@travesialocal.cl"><img src="assets/images/iconos/mail.svg" alt="icono mail"
+               class="icono-redes"></a>
+            <a href="https://www.instagram.com/travesia_local" target="_blank" rel="noopener noreferrer"><img src="assets/images/iconos/instagram.svg"
+                alt="icono instagram" class="icono-redes"></a>
           </div>
         </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-center">
+        <button class="btn border-none text-decoration-underline link-offset-2" data-bs-toggle="modal"
+          data-bs-target="#terminos-modal">Términos de uso</button>
+        <button class="btn border-none text-decoration-underline link-offset-2" data-bs-toggle="modal"
+          data-bs-target="#privacidad-modal">Política de privacidad</button>
       </div>
       <p class="text-center mt-2 copyright">Travesia Local 2026&copy; Todos los derechos reservados</p>
     </div>
   </footer>
 
+
+   <div class="modal fade" id="terminos-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Términos de uso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="modal-lista">
+            <li>Todas las imágenes presentes en el sitio son obra original de Francisca Ramírez I. y están protegidas
+              por las leyes de propiedad intelectual de Chile.</li>
+            <li>Queda prohibida su reproducción total o parcial, la descarga para uso comercial y cualquier modificacion
+              de estas sin autorización previa por escrito.</li>
+            <li>Para consulta sobre el uso del material visual, por favor contáctanos a través de nuestro formulario.
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="terminos-de-uso.html" class="btn btn-outline-secondary">Leer más detalles</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="privacidad-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Política de privacidad</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>En 'Travesía Local' respetamos tu privacidad. Nuestro sitio utiliza herramientas de análisis como Google
+            Analytics para conocer de forma anónima cómo las personas visitan y utilizan la página.</p>
+          <p>Estos datos nos ayudan a mejorar la experiencia de nuestros usuarios, pero no contienen ninguna información
+            personal identificable (como nombre, dirección o correo electrónico). La información recolectada incluye,
+            por ejemplo:</p>
+          <ul class="modal-lista">
+            <li>Páginas visitadas dentro del sitio</li>
+            <li>Tiempo de permanencia</li>
+            <li>Tipo de dispostivo y navegador</li>
+          </ul>
+          <p>Estos datos son procesados por Google Analytics, bajo sus propias políticas de privacidad, y no se
+            comparten con terceros fuera de ese servicio. Al continuar navegando en nuestro sitio, aceptas el uso de
+            cookies y datos anónimos para fines estadísticos y de mejora continua.</p>
+          <p>Puedes obtener más información en la <a href="https://policies.google.com/privacy" target="_blank"
+              rel="noreferrer noopener" class="text-decoration-underline link-offset-2">Política de
+              Privacidad de Google</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
