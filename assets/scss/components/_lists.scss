@@ -1,0 +1,10 @@
+ @use '../abstracts/variables' as var;
+ 
+ .experiencias-lista li::marker,
+ .viaje-lista li::marker,
+ .nosotros-lista li::marker,
+ .modal-lista li::marker,
+ .terminos-lista li::marker {
+   color: var.$purpura-primary;
+   font-size: 1.2em;
+ } 

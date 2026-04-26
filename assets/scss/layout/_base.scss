@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as var;
+
+html{
+  background-color: var.$crema-light ;
+  display: flex;
+  justify-content: center; // Centra horizontalmente al hijo (body)
+  min-height: 100vh;
+}
+
+body{
+  width: 100%;
+  max-width: 1400px;
+  box-shadow: 0 0 40px rgba(0,0,0, 0.05);
+}
+
+ .figure-caption {
+   padding-inline-start: 0.3em;
+ }

@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/* $primary: #63264a;
-$secondary: #c0d684;
-$dark: #0D1f22;
-$warning: #b38458;
-$light: #f3f9d2;
-
-
-$dark-primary: #3d0b37;
-$dark-secondary: #264027;
-
-$body-color: $dark; */
 @font-face {
   font-family: "Futura LT Book";
   src: url("../fonts/FuturaLT-Book.woff2") format("woff2");
@@ -31,9 +20,117 @@ $body-color: $dark; */
   font-style: normal;
   font-display: swap;
 }
-/* @use 'abstracts/mixins' as mix;
-@use 'components/components';
-@use 'layout/layout';  */
+.logo {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  .navbar-grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .navbar-grid-container .group-left {
+    justify-content: flex-end;
+  }
+  .navbar-grid-container .group-right {
+    justify-content: flex-start;
+  }
+  .navbar-grid-container .navbar-brand {
+    justify-self: center;
+  }
+  .navbar-grid-container .logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+.navbar a.nav-link {
+  color: #1E2B2D;
+  font-family: "Futura LT Condensed", sans-serif;
+}
+.navbar a.nav-link:hover, .navbar a.nav-link:focus {
+  color: #63264A;
+}
+.navbar a.nav-link.active {
+  color: #3D0B37;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+button.navbar-toggler {
+  border: 2px solid #63264A;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+button.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(99, 38, 74, 0.4);
+  outline: none;
+}
+
+html {
+  background-color: #F3F9D2;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body {
+  width: 100%;
+  max-width: 1400px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.figure-caption {
+  padding-inline-start: 0.3em;
+}
+
+.experiencias-lista li::marker,
+.nosotros-lista li::marker,
+.modal-lista li::marker,
+.terminos-lista li::marker {
+  color: #63264A;
+  font-size: 1.2em;
+}
+
+div.card {
+  border: solid 1px #0D1F22;
+}
+div.card:focus, div.card:hover {
+  transform: scale(1.05);
+}
+
+.icono-redes {
+  width: 2.5rem;
+}
+.icono-redes:focus, .icono-redes:hover {
+  transform: scale(1.1);
+}
+.icono-redes:active {
+  color: #3D0B37;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.carousel-productos {
+  aspect-ratio: 1.1/1;
+}
+
+.modal-respuesta-imagen {
+  width: 3rem;
+}
+
+.hero-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -105,7 +202,7 @@ $body-color: $dark; */
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Futura LT Book", system-ui, -apple-system, sans-serif;
+  --bs-font-sans-serif: "Futura LT Book", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -2297,6 +2394,11 @@ textarea.form-control {
   margin-left: auto !important;
 }
 
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
 .my-3 {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
@@ -2334,10 +2436,6 @@ textarea.form-control {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
-}
-
-.mb-5 {
-  margin-bottom: 3rem !important;
 }
 
 .p-2 {
@@ -2465,82 +2563,4 @@ textarea.form-control {
   .fs-4 {
     font-size: 1.5rem !important;
   }
-}
-/*  @media (min-width: 992px) {
-  .navbar-expand-lg {
-    >.container {
-
-      flex-direction: column;
-    }
-  }
-
-
-} */
-@media (min-width: 768px) {
-  .navbar-grid-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 1.5em;
-  }
-  .navbar-grid-container .group-left {
-    justify-content: flex-end;
-  }
-  .navbar-grid-container .group-right {
-    justify-content: flex-start;
-  }
-  .navbar-grid-container .navbar-brand {
-    justify-self: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-nav {
-    text-align: center;
-    /* padding: 1rem 0; */
-  }
-}
-.navbar .nav-link {
-  color: #1E2B2D;
-  font-family: "Futura LT Condensed", sans-serif;
-}
-.navbar .nav-link:hover, .navbar .nav-link:focus {
-  color: #63264A;
-}
-.navbar .nav-link.active {
-  color: #3D0B37;
-  font-weight: 700;
-}
-
-.logo {
-  width: 50px;
-}
-
-@media (min-width: 768px) {
-  .logo {
-    width: 80px;
-  }
-}
-.experiencias-lista li::marker,
-.nosotros-lista li::marker,
-.modal-lista li::marker,
-.terminos-lista li::marker {
-  color: #63264A;
-  font-size: 1.2em;
-}
-
-.copyright {
-  font-size: 0.8rem;
-}
-
-.hero-title {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.carousel-productos {
-  aspect-ratio: 1.1/1;
-}
-
-.modal-respuesta-imagen {
-  width: 3rem;
 }

@@ -7,14 +7,13 @@ const respuestaImagen = document.querySelector('#modal-respuesta-imagen')
 const respuestaMensaje = document.querySelector('#modal-respuesta-mensaje')
 
 
-form.addEventListener('submit', async (ev) => { // Agregamos async
+form.addEventListener('submit', async (ev) => {
   ev.preventDefault();
 
   if (!form.checkValidity()) {
     ev.stopPropagation();
     form.classList.add('was-validated');
   } else {
-    // Si es válido, enviamos los datos a Formspree
     const data = new FormData(form);
     console.log(data)
 

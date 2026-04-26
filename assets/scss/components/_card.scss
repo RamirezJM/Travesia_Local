@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as var;
+
+div.card{
+  border: solid 1px var.$petroleo-oscuro;
+  
+  &:focus, &:hover{
+    transform: scale(1.05);
+  }
+}
+
+
