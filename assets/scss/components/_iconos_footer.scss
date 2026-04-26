@@ -1,0 +1,18 @@
+ @use '../abstracts/variables' as var;
+ 
+ .icono-redes {
+   width: 2.5rem;
+
+   &:focus, &:hover{
+    transform: scale(1.1);
+   }
+
+   &:active{
+    color: var.$purpura-dark;
+   }
+ }
+
+
+  .copyright {
+   font-size: 0.8rem;
+ }
