@@ -18,7 +18,7 @@
     "sass:dev": "sass assets/scss/main.scss assets/css/styles.css --watch --source-map",
     "build:sass": "sass assets/scss/main.scss assets/css/styles.css --no-source-map",
     "build:css": "postcss assets/css/styles.css -o assets/css/styles.css --config postcss.config.js",
-    "deploy": "npm run build:sass && npm run build:css && gh-pages -d ."
+    "deploy": "npm run build:sass && npm run build:css && gh-pages -d dist"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
