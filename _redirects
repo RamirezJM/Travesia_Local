@@ -1,0 +1,8 @@
+# 1. Redirigir la home específica a la raíz limpia
+/index.html  /  301
+
+# 2. Forzar URLs limpias (quitar .html de cualquier página)
+/*.html  /:splat  301
+
+# 3. Regla de cortesía para el sitemap 
+/sitemap  /sitemap.xml  301
