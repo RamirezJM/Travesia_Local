@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
   langButtons.forEach(button => {
     // Cambiar el texto visual del botón para ofrecer el idioma OPUESTO
-    button.textContent = targetLang.toUpperCase();
+    const targetText = targetLang.toUpperCase();
+    const languageIcon = `<img src="/assets/images/iconos/world.svg" alt="world icon" class="me-1">`
     
+    button.innerHTML = `${languageIcon} ${targetText}`
     // Asignar la URL correspondiente
     button.setAttribute("href", targetUrl);
     
