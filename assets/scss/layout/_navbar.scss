@@ -17,6 +17,7 @@
 
     .group-right {
       justify-content: flex-start;
+      align-items: center;
     }
 
     .navbar-brand {
@@ -24,8 +25,8 @@
     }
 
     .logo {
-    width: 80px;
-  }
+      width: 80px;
+    }
   }
 }
 
@@ -38,7 +39,7 @@
 
 .navbar {
   a.nav-link {
-    color: var.$text-main; 
+    color: var.$text-main;
     font-family: 'Futura LT Condensed', sans-serif;
 
     &:hover,
@@ -52,16 +53,30 @@
       text-underline-offset: 0.3em;
     }
   }
+
+  a.btn-lang-switch {
+    border: var.$purpura-primary 2px solid;
+    padding: 0.5em 1em;
+
+    &:hover,
+    &:focus {
+      background-color: var.$verde-oliva;
+      border: none;
+      color: var.$text-main;
+    }
+
+
+  }
+
 }
 
 button.navbar-toggler {
   border: 2px solid var.$purpura-primary; // Tu color de paleta
   border-radius: 0.5rem; // Puedes hacerlo más redondeado o cuadrado
   padding: 0.25rem 0.5rem;
-  
+
   &:focus {
     box-shadow: 0 0 0 0.25rem rgba(var.$purpura-primary, 0.40); // Sombra de enfoque personalizada
     outline: none;
   }
 }
-
