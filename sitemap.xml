@@ -2,51 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://travesialocal.cl/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/" />
   </url>
   <url>
     <loc>https://travesialocal.cl/nosotros</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/nosotros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/nosotros" />
   </url>
   <url>
     <loc>https://travesialocal.cl/experiencias</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/experiencias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/experiences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/experiencias" />
   </url>
   <url>
     <loc>https://travesialocal.cl/coleccion</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/coleccion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/collection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/coleccion" />
   </url>
     <url>
     <loc>https://travesialocal.cl/bitacora</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/bitacora" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/travel-journal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/bitacora" />
   </url>
   <url>
     <loc>https://travesialocal.cl/contacto</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/contacto" />
   </url>
    <url>
     <loc>https://travesialocal.cl/terminos-de-uso</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/terminos-de-uso" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/terminos-de-uso" />
   </url>
    <url>
     <loc>https://travesialocal.cl/bitacora/como-llegar-a-tortel</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/como-llegar-a-tortel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/how-to-get-to-tortel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/como-llegar-a-tortel" />
   </url>
   
 </urlset>
