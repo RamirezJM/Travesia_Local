@@ -1,85 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Inicio / Home -->
   <url>
     <loc>https://travesialocal.cl/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/" />
   </url>
   <url>
+    <loc>https://travesialocal.cl/en/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/" />
+  </url>
+
+  <!-- Nosotros / About Us -->
+  <url>
     <loc>https://travesialocal.cl/nosotros</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/nosotros" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/about-us" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/nosotros" />
   </url>
   <url>
+    <loc>https://travesialocal.cl/en/about-us</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/nosotros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/nosotros" />
+  </url>
+
+  <!-- Experiencias / Experiences -->
+  <url>
     <loc>https://travesialocal.cl/experiencias</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/experiencias" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/experiences" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/experiencias" />
   </url>
   <url>
+    <loc>https://travesialocal.cl/en/experiences</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/experiencias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/experiences" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/experiencias" />
+  </url>
+
+  <!-- Colección / Collection -->
+  <url>
     <loc>https://travesialocal.cl/coleccion</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/coleccion" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/collection" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/coleccion" />
   </url>
-    <url>
+  <url>
+    <loc>https://travesialocal.cl/en/collection</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/coleccion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/collection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/coleccion" />
+  </url>
+
+  <!-- Bitácora / Travel Journal -->
+  <url>
     <loc>https://travesialocal.cl/bitacora</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/bitacora" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/travel-journal" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/bitacora" />
   </url>
   <url>
+    <loc>https://travesialocal.cl/en/travel-journal</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/bitacora" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/travel-journal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/bitacora" />
+  </url>
+
+  <!-- Contacto / Contact -->
+  <url>
     <loc>https://travesialocal.cl/contacto</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/contacto" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/contacto" />
   </url>
-   <url>
+  <url>
+    <loc>https://travesialocal.cl/en/contact</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/contacto" />
+  </url>
+
+  <!-- Términos de uso / Terms of Use -->
+  <url>
     <loc>https://travesialocal.cl/terminos-de-uso</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-
     <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/terminos-de-uso" />
     <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/terms-of-use" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/terminos-de-uso" />
   </url>
-   <url>
+  <url>
+    <loc>https://travesialocal.cl/en/terms-of-use</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/terminos-de-uso" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/terminos-de-uso" />
+  </url>
+
+  <!-- Artículo: Cómo llegar a Tortel -->
+  <url>
     <loc>https://travesialocal.cl/bitacora/como-llegar-a-tortel</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-
-    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/como-llegar-a-tortel" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/how-to-get-to-tortel" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/como-llegar-a-tortel" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/bitacora/como-llegar-a-tortel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/travel-journal/how-to-get-to-tortel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/bitacora/como-llegar-a-tortel" />
   </url>
-  
+  <url>
+    <loc>https://travesialocal.cl/en/travel-journal/how-to-get-to-tortel</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://travesialocal.cl/bitacora/como-llegar-a-tortel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://travesialocal.cl/en/travel-journal/how-to-get-to-tortel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://travesialocal.cl/bitacora/como-llegar-a-tortel" />
+  </url>
+
 </urlset>
