@@ -50,27 +50,9 @@ form.addEventListener('submit', async (ev) => {
         respuestaImagen.src = '/assets/images/iconos/respuesta-error.svg'
         respuestaMensaje.innerText = "We couldn't send your message. Please try again or contact us through our social media platforms."
       }
-       const responseData = await response.json();
-       /* form.reset(); */
+      const responseData = await response.json();
     }
-
-
-    /* 
-        if (response.ok) {
-          respuestaTitulo.innerText = '¡Mensaje Enviado!'
-          respuestaImagen.src = 'assets/images/iconos/respuesta-ok.svg'
-          respuestaMensaje.innerText = 'Gracias por contactarnos. Nos comunicaremos contigo a la brevedad.'
-          form.classList.remove('was-validated');
-          form.reset();
-        } else {
-          respuestaTitulo.innerText = 'Ha ocurrido un error'
-          respuestaImagen.src = 'assets/images/iconos/respuesta-error.svg'
-          respuestaMensaje.innerText = 'No pudimos procesar tu solicitud. Por favor intenta nuevamente o contáctanos a través de nuestras redes sociales.'
-          const responseData = await response.json();
-          console.log(responseData);
-          form.reset();
-        } */
-
+    modalRespuesta.show()
   }
-  modalRespuesta.show()
+
 });
